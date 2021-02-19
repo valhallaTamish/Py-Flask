@@ -1,12 +1,8 @@
-FROM python:latest
+FROM jazzdd/alpine-flask
 USER root
-COPY . /app/
+COPY * /app/
 WORKDIR /app/
-RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
-  && tar xzvf docker-17.04.0-ce.tgz \
-  && mv docker/docker /usr/local/bin \
-  && rm -r docker docker-17.04.0-ce.tgz
 RUN pip install -r requirements.txt
-EXPOSE 8000
+EXPOSE 80
 CMD [ "python","app.py"]
 
