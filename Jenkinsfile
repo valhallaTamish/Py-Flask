@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/Srirammkm/py-flask.git'
+        git 'https://github.com/Srirammkm/Py-Flask.git'
       }
     }
     stage('Building image') {
