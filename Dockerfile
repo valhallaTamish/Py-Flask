@@ -1,6 +1,6 @@
 FROM jazzdd/alpine-flask
 USER root
-COPY * /app/
+COPY . /app/
 WORKDIR /app/
 RUN pip install --upgrade pip
 EXPOSE 80
