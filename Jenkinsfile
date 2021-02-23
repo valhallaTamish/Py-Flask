@@ -12,7 +12,6 @@ pipeline {
   }
   agent any 
   stages {
-    # Download and Install IBM Cloud CLI
     stage('Install IBM Cloud CLI') {
       steps { 
         sh ''' 
