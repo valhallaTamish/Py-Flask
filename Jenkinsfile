@@ -25,7 +25,7 @@ pipeline {
     stage('Authenticate with IBM Cloud CLI') {
       steps {
         sh '''
-            msriram0803@gmail.com | ./login.sh
+            56ZlHSJiZDQg65ad6y2Vz-LAaV36LTta7A8yY-LqLo_s
             ibmcloud ks cluster config --cluster ${IKS_CLUSTER}
             '''
       }
